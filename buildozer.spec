@@ -1,6 +1,6 @@
 [app]
 title = Cotiser
-package.name = Zelipro
+package.name = Zelipro_cotisation
 package.domain = org.example
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas,webp
