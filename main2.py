@@ -28,7 +28,10 @@ class Cotise(MDApp):
         main = Builder.load_file("main2.kv")
         #main.ids.cr.current = "Page1"
         return main
-        
+
+    def on_start(self):
+        if not os.path.exists(os.getcwd() + "/" + "Base_de_donne" ):
+            os.mkdir(os.getcwd() + "/" + "Base_de_donne" )
     def do(self,instance):
         Name = self.root.ids.Ident.text
         Pass = self.root.ids.Pass.text
